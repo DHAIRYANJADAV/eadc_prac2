@@ -1,9 +1,14 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
+
+// Serve static files from the current directory
+app.use(express.static(__dirname));
+
 app.get('/', (req, res) => {
-    res.send('Hello, this is a code by Dhairya to test pipeline and this is the second version');
-  });
-  const port = process.env.PORT || 3000;
+  res.sendFile(__dirname + '/index.html');
+});
+
 app.listen(port, () => {
-  console.log(`API server listening on port ${port}`);
+  console.log(`Server listening on port ${port}`);
 });
