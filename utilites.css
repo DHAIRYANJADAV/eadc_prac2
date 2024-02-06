@@ -1,0 +1,47 @@
+.Flex{
+    Display: Flex;
+    }
+    .Items-Centre{
+    Align-Items: Center;
+    }
+    .Justify-Between{
+    Justify-Content: Space-Between;
+    }
+    .Justify-Center{
+    Justify-Content: Center;
+    }
+    .Justify-Right{
+    Justify-Content: Right;
+    }
+    .Btn{
+    Padding: 0.6rem 2rem;
+    Font-Size: 1rem;
+    Font-Weight: 600;
+    Border: 2px Solid Transparent;
+    Outline: None;
+    Cursor: Pointer;
+    Text-Transform: Uppercase;
+    Transition: All .2s Ease;
+    }
+    .Btn-Primary{
+    Background-Color: Var(--Primary);
+    Color: Var(--Secondary);
+    Margin-Top: -15rem;
+    }
+    .Btn-Primary:hover{
+    Background: Transparent;
+    Border-Color: Var(--Primary);
+    Color: Var(--Primary);
+    }
+    .Flex-1{
+    Flex: 1;
+    }
+    .Btn-Secondary{
+    Background: Transparent;
+    Color: Var(--Primary);
+    Border-Color: Var(--Primary);
+    }
+    .Btn-Secondary:hover{
+    Background: Var(--Primary);
+    Color: Var(--Secondary);
+    }
